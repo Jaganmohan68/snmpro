@@ -1,0 +1,55 @@
+/* Notes Page */
+.notes-container {
+    padding: 30px;
+}
+
+/* Heading */
+.notes-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table */
+.notes-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table Header */
+.notes-table thead {
+    background: #4facfe;
+    color: white;
+}
+
+.notes-table th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table Cells */
+.notes-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Row Hover */
+.notes-table tbody tr:hover {
+    background: #f5faff;
+}
+
+/* Zebra Stripes */
+.notes-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .notes-table {
+        font-size: 12px;
+    }
+}
