@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Notes Management</title>
+    <link rel="stylesheet" href="/static/welcome.css">
 </head>
 <body>
-    <center>
-        <h1><b>Simple Notes Management</b></h1>
-        <a href="{{url_for('register')}}"><button>Register</button></a>
-        <a href="{{url_for('login')}}"><button>Login</button></a>
-        </center>
+
+    <div class="container">
+        <h1>Simple Notes Management</h1>
+
+        <div class="buttons">
+            <a href="{{url_for('register')}}">
+                <button>Register</button>
+            </a>
+
+            <a href="{{url_for('login')}}">
+                <button>Login</button>
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>

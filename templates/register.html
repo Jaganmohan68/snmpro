@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/register.css">
 </head>
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    {% for message in messages %}
-      <center><p style="color: blue;" >{{message}}</p></center>
-    {% endfor %}
-    
-  {% endif %}
-{% endwith %}
-<body>
-    <center>Register</center>
-    <center>
-        <form method="post" action="{{url_for('register')}}">
-            <input type="text" name="username" placeholder="Enter username"/><br><br>
-            <input type="text" name="useremail" placeholder="Enter useremail"/><br><br>
-            <input type="text" name="userpassword" placeholder="Enter userpassword"/><br><br>
-            <button>SUBMIT</button>
 
+<body>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <div class="container">
+        <h2>Register</h2>
+
+        <form method="post" action="{{url_for('register')}}">
+            <input type="text" name="username" placeholder="Enter username" required>
+
+            <input type="email" name="useremail" placeholder="Enter email" required>
+
+            <input type="password" name="userpassword" placeholder="Enter password" required>
+
+            <button type="submit">Submit</button>
         </form>
-        </center>
+    </div>
+
 </body>
 </html>
