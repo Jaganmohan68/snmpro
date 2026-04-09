@@ -1,0 +1,90 @@
+/* Background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.files-container {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading */
+.files-container h2 {
+    margin-bottom: 20px;
+    color: #00f5d4;
+    text-shadow: 0 0 8px #00f5d4;
+}
+
+/* Glass Table */
+.files-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* Header */
+.files-table thead {
+    background: rgba(0, 245, 212, 0.2);
+}
+
+.files-table th {
+    padding: 12px;
+    color: #00f5d4;
+}
+
+/* Rows */
+.files-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover Effect */
+.files-table tbody tr:hover {
+    background: rgba(0, 245, 212, 0.1);
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+/* Buttons */
+.btn {
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Button Colors */
+.view {
+    background: #00f5d4;
+}
+
+.download {
+    background: #4facfe;
+}
+
+.delete {
+    background: #ff4d4d;
+}
+
+/* Hover Glow */
+.btn:hover {
+    box-shadow: 0 0 10px currentColor;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .files-table {
+        font-size: 12px;
+    }
+}

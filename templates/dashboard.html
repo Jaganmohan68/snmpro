@@ -24,11 +24,11 @@
         </li>
 
         <!-- Files Dropdown -->
-        <li class="dropdown">
+        <li class="dropdown">       
             <a href="#">Files ▼</a>
             <div class="dropdown-content">
                 <a href="{{url_for("uploadfile")}}">Upload File</a>
-                <a href="{{url_for("viewallnotes")}}">View All Files</a>
+                <a href="{{ url_for('allfilesdata') }}">View All Files</a>
             </div>
         </li>
         {% block extra %}
